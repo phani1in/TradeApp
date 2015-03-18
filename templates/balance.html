@@ -1,0 +1,49 @@
+<ion-view title="Balance">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content>
+   <div class="list">
+
+  <div class="item item-divider">
+    Current Balance
+  </div>
+
+  <a class="item" href="#">
+    {{balance}} USD
+  </a>
+
+</div>
+
+<a class="button button-block button-positive" href="#/app/deposit">
+  Deposit  Funds
+</a>
+
+
+<a class="button button-block button-assertive" href="#/app/withdraw">
+  Withdraw Funds
+</a>
+
+<div class="list">
+
+  <div class="item item-divider">
+    Purchased
+  </div>
+
+  <a class="item" href="#" ng-repeat="p in pstks">
+    {{p.name}} <span style="float:right;">{{p.price}} USD</span>
+  </a>
+  
+  <div class="item item-divider">
+    Sold
+  </div>
+
+  <a class="item" href="#" ng-repeat="s in sstks">
+	{{s.name}} <span style="float:right;">{{s.price}} USD</span>
+  </a>
+
+
+</div>
+
+  </ion-content>
+</ion-view>

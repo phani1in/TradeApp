@@ -1,0 +1,32 @@
+<ion-view title="Set Profile Image">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content>
+ 
+    <div class="item">
+		<center><img src="{{image}}" style="width:500px;"></center>
+		<br/>
+		<br/>
+		<center><i class="icon ion-ios7-camera-outline" style="font-size:60px;" ng-click="getPhoto()"></i></center>
+	</div>
+	
+	<div class="list">
+	  <div class="item item-input-inset">
+		<label class="item-input-wrapper">
+		  <input type="text" placeholder="Full Name" id="name" value="{{name}}">
+		</label>
+	  </div>
+	  <div class="item item-input-inset">
+		<label class="item-input-wrapper">
+		  <textarea placeholder="Address" id="address">{{address}}</textarea>
+		</label>
+	  </div>
+	  <div class="item item-input-inset">
+		
+			<input type="button" value="Update" class="button button-balanced" ng-click="update()"/>
+		
+	  </div>
+	</div>
+    </ion-content>
+</ion-view>

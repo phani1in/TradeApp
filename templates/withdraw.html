@@ -1,0 +1,28 @@
+<ion-view title="Balance">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content>
+   <div class="list">
+
+  <div class="item item-divider">
+    Current Balance
+  </div>
+
+  <a class="item" href="#">
+    {{balance}} USD
+  </a>
+  
+  <label class="item item-input">
+	<input type="hidden" value="{{balance}}" id="current">
+    <input type="text" placeholder="Amount, Ex: 1500" id="withdraw">
+  </label>
+
+</div>
+
+<button class="button button-block button-balanced" ng-click="withdraw()">
+  Withdraw Funds
+</button>
+
+  </ion-content>
+</ion-view>
