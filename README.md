@@ -20,4 +20,6 @@ npm install -g ionic
 npm install mysqllite
 
 replace www directory with the entire fileset and run the below command. We are set to see an app with trading functionalities. It also includes camera feature which was supported by ionic framework.
+
+
 cordova run android
